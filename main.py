@@ -8,7 +8,7 @@ app=FastAPI(
     description='Predict Water Potability'
 )
 
-with open('D:\MLData\ML_Pipe\model.pkl','rb') as f:
+with open('model.pkl','rb') as f:
     model=pickle.load(f)
 
 @app.get('/')
